@@ -1,6 +1,6 @@
 package hello.itemservice.domain.item;
 
-public class ItemType {
+public enum ItemType {
 
     BOOK("도서"), FOOD("음식"), ETC("기타");
 
@@ -8,5 +8,9 @@ public class ItemType {
 
     ItemType(String decsription) {
         this.decsription = decsription;
+    }
+
+    public String getDecsription() {
+        return decsription;
     }
 }
