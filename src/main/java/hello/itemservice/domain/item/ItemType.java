@@ -1,16 +1,19 @@
 package hello.itemservice.domain.item;
 
+import org.springframework.web.bind.annotation.ModelAttribute;
+
 public enum ItemType {
 
     BOOK("도서"), FOOD("음식"), ETC("기타");
 
-    private final String decsription;
+    private final String description;
 
-    ItemType(String decsription) {
-        this.decsription = decsription;
+    ItemType(String description) {
+        this.description = description;
     }
 
-    public String getDecsription() {
-        return decsription;
+    public String getDescription() {
+
+        return description;
     }
 }
