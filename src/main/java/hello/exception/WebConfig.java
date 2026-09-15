@@ -2,6 +2,7 @@ package hello.exception;
 
 import hello.exception.intercepter.LogInterceptor;
 import hello.exception.resolver.MyHandlerExceptionResolver;
+import hello.exception.resolver.UserHanlerExceptionResolver;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.DispatcherType;
 import hello.exception.filter.LogFilter;
@@ -29,6 +30,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {
         resolvers.add(new MyHandlerExceptionResolver());
+        resolvers.add(new UserHanlerExceptionResolver());
     }
 
     //    @Bean
