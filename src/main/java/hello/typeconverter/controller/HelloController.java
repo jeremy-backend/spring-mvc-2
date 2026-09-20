@@ -25,7 +25,7 @@ public class HelloController {
 
     @GetMapping("/ip-port")
     public String ipPort(@RequestParam IpPort ipPort) {
-        System.out.println("ipPort.getIp() = " g+ ipPort.getIp());
+        System.out.println("ipPort.getIp() = " + ipPort.getIp());
         System.out.println("ipPort.PORT = " + ipPort.getPort());
         return "ok";
 
